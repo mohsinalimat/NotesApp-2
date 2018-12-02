@@ -10,7 +10,6 @@ import Foundation
 import  UIKit
 extension UIColor
 {
-    
     var hexString:NSString {
         let colorRef =  self.cgColor.components
         let r:CGFloat = colorRef![0]

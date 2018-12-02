@@ -14,10 +14,10 @@ target 'NotesApp' do
     pod 'Moya/RxSwift'
     pod 'RealmSwift'
     pod 'RxDataSources', '~> 3.0'
-    pod  'Twinkle', '~> 0.4.0'
     pod 'IQKeyboardManagerSwift'
+    pod 'Luminous'
 
-    # Pods for NotesApp
+# Pods for NotesApp
     
     target 'NotesAppTests' do
         inherit! :search_paths

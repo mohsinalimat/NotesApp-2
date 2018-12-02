@@ -17,4 +17,8 @@ class DeviceHelper{
     static func isEnglish ()->Bool{
         return   NSLocale.current.languageCode?.contains("en") ?? false
     }
+    
+    
+    
+ 
 }

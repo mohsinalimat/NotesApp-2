@@ -13,7 +13,6 @@
 		059FCE3F21B0293200B13411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059FCE3E21B0293200B13411 /* Assets.xcassets */; };
 		059FCE4221B0293200B13411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059FCE4021B0293200B13411 /* LaunchScreen.storyboard */; };
 		059FCE4D21B0293300B13411 /* NotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE4C21B0293300B13411 /* NotesAppTests.swift */; };
-		059FCE5F21B02B0600B13411 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059FCE5E21B02B0600B13411 /* Colors.xcassets */; };
 		059FCE6421B02D8F00B13411 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE6321B02D8F00B13411 /* UIColor+Hex.swift */; };
 		059FCE6621B02DDC00B13411 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE6521B02DDC00B13411 /* Dictionary.swift */; };
 		059FCE6921B02E5D00B13411 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE6821B02E5D00B13411 /* DeviceHelper.swift */; };
@@ -23,9 +22,21 @@
 		059FCE7321B0308C00B13411 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE7221B0308C00B13411 /* NotesViewModel.swift */; };
 		059FCE7521B030B200B13411 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE7421B030B200B13411 /* DatabaseManager.swift */; };
 		059FCE7721B030EF00B13411 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE7621B030EF00B13411 /* API.swift */; };
-		059FCE7921B034B600B13411 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FCE7821B034B600B13411 /* SplashController.swift */; };
 		075A8E2E9EA864CC2397DDBF /* Pods_NotesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2A8BADD539F8E6CBE3F16 /* Pods_NotesApp.framework */; };
 		1AA7017DB0F6627506CF1322 /* Pods_NotesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473C6B079B92CFBAC7361567 /* Pods_NotesAppTests.framework */; };
+		1EBB6FDE21B2C55B00D8FADD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB6FDD21B2C55B00D8FADD /* Colors.xcassets */; };
+		1EBB6FE121B2C92100D8FADD /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FDF21B2C92100D8FADD /* NoteTableViewCell.swift */; };
+		1EBB6FE221B2C92100D8FADD /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB6FE021B2C92100D8FADD /* NoteTableViewCell.xib */; };
+		1EBB6FE821B2C9A100D8FADD /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FE621B2C9A100D8FADD /* EmptyCell.swift */; };
+		1EBB6FE921B2C9A100D8FADD /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB6FE721B2C9A100D8FADD /* EmptyCell.xib */; };
+		1EBB6FEC21B2C9D100D8FADD /* EditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FEA21B2C9D100D8FADD /* EditCell.swift */; };
+		1EBB6FED21B2C9D100D8FADD /* EditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB6FEB21B2C9D100D8FADD /* EditCell.xib */; };
+		1EBB6FEF21B2CA7500D8FADD /* NewNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FEE21B2CA7500D8FADD /* NewNoteVC.swift */; };
+		1EBB6FF121B2DB1400D8FADD /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FF021B2DB1400D8FADD /* RoundedButton.swift */; };
+		1EBB6FF421B2DBD000D8FADD /* UIViews+rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FF321B2DBD000D8FADD /* UIViews+rounded.swift */; };
+		1EBB6FF621B2E38000D8FADD /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FF521B2E38000D8FADD /* UnderlineTextField.swift */; };
+		1EBB6FF921B3BA2D00D8FADD /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FF821B3BA2C00D8FADD /* NoteModel.swift */; };
+		1EBB6FFB21B3D47400D8FADD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB6FFA21B3D47400D8FADD /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +60,6 @@
 		059FCE4821B0293300B13411 /* NotesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		059FCE4C21B0293300B13411 /* NotesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppTests.swift; sourceTree = "<group>"; };
 		059FCE4E21B0293300B13411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		059FCE5E21B02B0600B13411 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		059FCE6321B02D8F00B13411 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		059FCE6521B02DDC00B13411 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		059FCE6821B02E5D00B13411 /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
@@ -59,8 +69,20 @@
 		059FCE7221B0308C00B13411 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
 		059FCE7421B030B200B13411 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		059FCE7621B030EF00B13411 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		059FCE7821B034B600B13411 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		1E97F5A2C2BE766F64D89B76 /* Pods-NotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp.release.xcconfig"; sourceTree = "<group>"; };
+		1EBB6FDD21B2C55B00D8FADD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1EBB6FDF21B2C92100D8FADD /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		1EBB6FE021B2C92100D8FADD /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		1EBB6FE621B2C9A100D8FADD /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		1EBB6FE721B2C9A100D8FADD /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		1EBB6FEA21B2C9D100D8FADD /* EditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCell.swift; sourceTree = "<group>"; };
+		1EBB6FEB21B2C9D100D8FADD /* EditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditCell.xib; sourceTree = "<group>"; };
+		1EBB6FEE21B2CA7500D8FADD /* NewNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteVC.swift; sourceTree = "<group>"; };
+		1EBB6FF021B2DB1400D8FADD /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1EBB6FF321B2DBD000D8FADD /* UIViews+rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViews+rounded.swift"; sourceTree = "<group>"; };
+		1EBB6FF521B2E38000D8FADD /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		1EBB6FF821B3BA2C00D8FADD /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		1EBB6FFA21B3D47400D8FADD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		473C6B079B92CFBAC7361567 /* Pods_NotesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07697BC19F9E5EE908F4F64 /* Pods-NotesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B4734DC031496C95A9602853 /* Pods-NotesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotesAppTests/Pods-NotesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +133,8 @@
 		059FCE3621B0293000B13411 /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				1EBB6FF721B3BA1200D8FADD /* Model */,
+				1EBB6FDC21B2C25400D8FADD /* Views */,
 				059FCE6F21B02F2900B13411 /* Base */,
 				059FCE6A21B02EAD00B13411 /* Router */,
 				059FCE6721B02E4400B13411 /* Helpers */,
@@ -120,7 +144,6 @@
 				059FCE5B21B02A4800B13411 /* Managers */,
 				059FCE5A21B02A4100B13411 /* API */,
 				059FCE5921B02A3900B13411 /* Storyboards */,
-				059FCE5821B02A3300B13411 /* Views */,
 				059FCE5721B02A2700B13411 /* Controllers */,
 				059FCE3721B0293000B13411 /* AppDelegate.swift */,
 				059FCE4321B0293200B13411 /* Info.plist */,
@@ -141,15 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				059FCE3921B0293000B13411 /* ViewController.swift */,
+				1EBB6FEE21B2CA7500D8FADD /* NewNoteVC.swift */,
 			);
 			path = "\U0010Controllers";
-			sourceTree = "<group>";
-		};
-		059FCE5821B02A3300B13411 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		059FCE5921B02A3900B13411 /* Storyboards */ = {
@@ -181,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				059FCE7221B0308C00B13411 /* NotesViewModel.swift */,
-				059FCE7821B034B600B13411 /* SplashController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,8 +205,9 @@
 		059FCE5D21B02A5A00B13411 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1EBB6FF221B2DB9C00D8FADD /* Custom */,
 				059FCE3E21B0293200B13411 /* Assets.xcassets */,
-				059FCE5E21B02B0600B13411 /* Colors.xcassets */,
+				1EBB6FDD21B2C55B00D8FADD /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -200,6 +217,7 @@
 			children = (
 				059FCE6321B02D8F00B13411 /* UIColor+Hex.swift */,
 				059FCE6521B02DDC00B13411 /* Dictionary.swift */,
+				1EBB6FF321B2DBD000D8FADD /* UIViews+rounded.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -227,6 +245,61 @@
 				059FCE7021B02F3E00B13411 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		1EBB6FDC21B2C25400D8FADD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1EBB6FE521B2C95200D8FADD /* EmptyCell */,
+				1EBB6FE421B2C93E00D8FADD /* EditNoteCell */,
+				1EBB6FE321B2C92900D8FADD /* NoteCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1EBB6FE321B2C92900D8FADD /* NoteCell */ = {
+			isa = PBXGroup;
+			children = (
+				1EBB6FDF21B2C92100D8FADD /* NoteTableViewCell.swift */,
+				1EBB6FE021B2C92100D8FADD /* NoteTableViewCell.xib */,
+			);
+			path = NoteCell;
+			sourceTree = "<group>";
+		};
+		1EBB6FE421B2C93E00D8FADD /* EditNoteCell */ = {
+			isa = PBXGroup;
+			children = (
+				1EBB6FEA21B2C9D100D8FADD /* EditCell.swift */,
+				1EBB6FEB21B2C9D100D8FADD /* EditCell.xib */,
+			);
+			path = EditNoteCell;
+			sourceTree = "<group>";
+		};
+		1EBB6FE521B2C95200D8FADD /* EmptyCell */ = {
+			isa = PBXGroup;
+			children = (
+				1EBB6FE621B2C9A100D8FADD /* EmptyCell.swift */,
+				1EBB6FE721B2C9A100D8FADD /* EmptyCell.xib */,
+			);
+			path = EmptyCell;
+			sourceTree = "<group>";
+		};
+		1EBB6FF221B2DB9C00D8FADD /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1EBB6FF021B2DB1400D8FADD /* RoundedButton.swift */,
+				1EBB6FF521B2E38000D8FADD /* UnderlineTextField.swift */,
+				1EBB6FFA21B3D47400D8FADD /* CardView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		1EBB6FF721B3BA1200D8FADD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EBB6FF821B3BA2C00D8FADD /* NoteModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CBC631F3AF058860B9A06CFB /* Pods */ = {
@@ -334,9 +407,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				059FCE4221B0293200B13411 /* LaunchScreen.storyboard in Resources */,
-				059FCE5F21B02B0600B13411 /* Colors.xcassets in Resources */,
+				1EBB6FDE21B2C55B00D8FADD /* Colors.xcassets in Resources */,
 				059FCE3F21B0293200B13411 /* Assets.xcassets in Resources */,
+				1EBB6FE221B2C92100D8FADD /* NoteTableViewCell.xib in Resources */,
 				059FCE3D21B0293000B13411 /* Main.storyboard in Resources */,
+				1EBB6FED21B2C9D100D8FADD /* EditCell.xib in Resources */,
+				1EBB6FE921B2C9A100D8FADD /* EmptyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,11 +434,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Deviice/Deviice.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Localize/Localize.framework",
+				"${BUILT_PRODUCTS_DIR}/Luminous/Luminous.framework",
 				"${BUILT_PRODUCTS_DIR}/MJSnackBar/MJSnackBar.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PopItUp/PopItUp.framework",
@@ -372,16 +450,17 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Twinkle/Twinkle.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Deviice.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Luminous.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJSnackBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopItUp.framework",
@@ -391,7 +470,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Twinkle.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -447,12 +525,20 @@
 				059FCE6621B02DDC00B13411 /* Dictionary.swift in Sources */,
 				059FCE7721B030EF00B13411 /* API.swift in Sources */,
 				059FCE6921B02E5D00B13411 /* DeviceHelper.swift in Sources */,
+				1EBB6FE821B2C9A100D8FADD /* EmptyCell.swift in Sources */,
 				059FCE3A21B0293000B13411 /* ViewController.swift in Sources */,
 				059FCE7321B0308C00B13411 /* NotesViewModel.swift in Sources */,
-				059FCE7921B034B600B13411 /* SplashController.swift in Sources */,
+				1EBB6FF921B3BA2D00D8FADD /* NoteModel.swift in Sources */,
 				059FCE7121B02F3E00B13411 /* BaseViewController.swift in Sources */,
 				059FCE6C21B02EBC00B13411 /* SroryBoards.swift in Sources */,
+				1EBB6FF121B2DB1400D8FADD /* RoundedButton.swift in Sources */,
+				1EBB6FEC21B2C9D100D8FADD /* EditCell.swift in Sources */,
+				1EBB6FFB21B3D47400D8FADD /* CardView.swift in Sources */,
+				1EBB6FF421B2DBD000D8FADD /* UIViews+rounded.swift in Sources */,
+				1EBB6FF621B2E38000D8FADD /* UnderlineTextField.swift in Sources */,
+				1EBB6FEF21B2CA7500D8FADD /* NewNoteVC.swift in Sources */,
 				059FCE3821B0293000B13411 /* AppDelegate.swift in Sources */,
+				1EBB6FE121B2C92100D8FADD /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,15 +701,17 @@
 			baseConfigurationReference = B07697BC19F9E5EE908F4F64 /* Pods-NotesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQSUH8EU7X;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NotesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.itg.mahmoud.NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -634,15 +722,17 @@
 			baseConfigurationReference = 1E97F5A2C2BE766F64D89B76 /* Pods-NotesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQSUH8EU7X;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NotesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.itg.mahmoud.NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

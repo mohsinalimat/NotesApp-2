@@ -7,10 +7,38 @@
 //
 
 import Foundation
+import Luminous
+import RxSwift
 class NotesViewModel {
     
     
     
+    
+    
+    init() {
+        
+    }
+
+    func geNotes(){
+        
+        if(Luminous.System.Network.isInternetAvailable){
+           getRemotelly()
+        }else {
+            getLocallly()
+        }
+    }
+    
+    func getLocallly(){
+        
+    }
+    
+    func getRemotelly(){
+        
+    let x =    NoteDBManager.getAllNotes()
+        
+        
+    }
+
 }
 
 
