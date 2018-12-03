@@ -25,6 +25,10 @@ class NoteModel : Object,Codable {
         case id = "id"
     }
     
+    override class func primaryKey() -> String? {
+        return "id"
+    }
+    
     required convenience  init(from decoder: Decoder) throws {
         self.init()
         let values = try decoder.container(keyedBy: CodingKeys.self)

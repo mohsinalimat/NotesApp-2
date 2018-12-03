@@ -44,7 +44,7 @@ class BaseViewController: UIViewController , Routable{
         
     }
     
-    func showSnackBar(msg:String){
+    func showSnackBar(_ msg:String){
         let data = MJSnackBarData(withIdentifier: 12, message: msg, andActionMessage: nil, objectSaved: nil)
         snackBar?.show(data: data, onView: self.view)
         

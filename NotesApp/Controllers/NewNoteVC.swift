@@ -10,44 +10,45 @@ import UIKit
 import RxSwift
 
 class NewNoteVC: BaseViewController {
+    //Mark-: vars
+    var type:VCType = .addVC
+    var note:NoteModel?
+    var viewModel:NotesViewModel?
     
-    var callbackSubject:PublishSubject<String>?
-    
+    //Mark Outlets
+    @IBOutlet weak var btnSubmit: RoundedButton!
     @IBOutlet weak var noteTextField: UnderLineTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        switch type {
+        case .addVC:
+            self.btnSubmit.setTitle("add", for: UIControlState.normal)
+            break
+        case .editVC:
+            noteTextField.text = note?.title ?? ""
+            self.btnSubmit.setTitle("edit", for: UIControlState.normal)
+            break
+        }
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     @IBAction func addNoteTapped(_ sender: Any) {
-        
-        
-        if let note = noteTextField.text , note.count > 0 {
-            
-            callbackSubject?.onNext(note)
+        if let cnote = noteTextField.text , cnote.count > 0 {
+            guard let mynote = note else{
+                return
+            }
+            mynote.title = cnote
+            NoteDBManager.addNote(note: mynote)
             dismiss(animated: true, completion: nil)
-
         }else {
-            showSnackBar(msg: "Note field is empty")
-            
+            viewModel?.showErr(str: "Note field is empty")
         }
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+}
+enum VCType {
+    case addVC
+    case editVC
 }

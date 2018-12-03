@@ -21,19 +21,19 @@ class NoteDBManager{
         return results
     }
     
-    func addData(object: NoteModel)   {
+  static  func addData(object: NoteModel)   {
         try! NoteDBManager.mRealm.write {
             NoteDBManager.mRealm.add(object, update: true)
             print("Added new object")
         }
     }
-    func deleteAllFromDatabase()  {
+  static  func deleteAllFromDatabase()  {
         try!  NoteDBManager.mRealm.write {
             NoteDBManager.mRealm.deleteAll()
         }
     }
     
-    func deleteFromDb<T:Object>(object: T)   {
+    static func deleteFromDb<T:Object>(object: T)   {
         try!   NoteDBManager.mRealm.write {
             NoteDBManager.mRealm.delete(object)
         }

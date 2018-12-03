@@ -18,9 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-Yb-t3L">
-                                <rect key="frame" x="20" y="0.0" width="335" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-Yb-t3L">
+                                <rect key="frame" x="20" y="5" width="335" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6C-oL-Sl8" customClass="RoundedButton" customModule="NotesApp" customModuleProvider="target">
                                 <rect key="frame" x="290" y="518" width="45" height="45"/>
@@ -40,7 +41,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="z3z-Yb-t3L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1we-rr-RYm"/>
+                            <constraint firstItem="z3z-Yb-t3L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="1we-rr-RYm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W6C-oL-Sl8" secondAttribute="bottom" constant="40" id="54w-ba-pTf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z3z-Yb-t3L" secondAttribute="trailing" constant="20" id="XsM-e0-Qye"/>
                             <constraint firstItem="z3z-Yb-t3L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d1b-fe-bkv"/>
@@ -50,6 +51,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Notes App" id="wfC-RV-eDf"/>
+                    <connections>
+                        <outlet property="tableview" destination="z3z-Yb-t3L" id="IQk-dv-38M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +116,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="130"/>
                     <connections>
+                        <outlet property="btnSubmit" destination="ETB-3N-Qko" id="UVi-9Q-Nxm"/>
                         <outlet property="noteTextField" destination="xdg-d9-m0S" id="P3E-UY-Ksh"/>
                     </connections>
                 </viewController>

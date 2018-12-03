@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import PopMenu
 
 class NoteTableViewCell: UITableViewCell {
 
+    var note:NoteModel?{
+        didSet{
+            noteLbl.text = note?.title
+        }
+    }
+    
+    @IBOutlet weak var noteLbl: UILabel!
+    
+    @IBOutlet weak var btnActions: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
+    @IBAction func btnActionsTapped(_ sender: Any) {
+       
+    }
 }

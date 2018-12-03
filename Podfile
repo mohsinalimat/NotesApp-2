@@ -16,8 +16,11 @@ target 'NotesApp' do
     pod 'RxDataSources', '~> 3.0'
     pod 'IQKeyboardManagerSwift'
     pod 'Luminous'
-
-# Pods for NotesApp
+    pod 'NewPopMenu' , '~> 1.1'
+    pod 'RxRealm'
+    pod 'RxRealmDataSources'
+    
+    # Pods for NotesApp
     
     target 'NotesAppTests' do
         inherit! :search_paths
